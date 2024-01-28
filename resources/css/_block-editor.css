@@ -1,0 +1,44 @@
+
+.editor-styles-wrapper {
+    position: relative;
+}
+.acf-block-preview{
+    a{
+        text-decoration: none;
+    }
+}
+
+.wp-block-cover{
+    .wp-block-cover__inner-container{
+        @apply max-w-screen-lg;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        h1, h2, h3, h4, h5, h6{
+            width: 100%;
+        }
+    }
+}
+
+.wp-block-group{
+    border:  1px solid rgba( 240,240,240,  1) !important;
+  @apply p-2 m-2;
+}
+.block-library-spacer__resize-container{
+    background: rgba(gray,0.5);
+}
+
+.wp-block-spacer{
+    background-color: rgba( 240,240,240,  1);
+}
+
+.wp-block-columns{
+    padding: 20px;
+    border: 2px dotted rgba( 0,0,0 , .1);
+    background-color: rgba( 250,250,250 , .35);
+    .wp-block-column{
+        padding: 20px;
+        border: 2px dotted rgba(0,0,0 , .1);
+        background-color: rgba(250,250,250 , .35);    
+    }
+}
+/* FROM HERE CUSTOM*/

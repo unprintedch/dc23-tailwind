@@ -1,0 +1,27 @@
+.alignfull {
+	@apply mx-[calc(calc(50%_-_50vw))] w-screen;
+}
+
+
+.alignnone {
+	@apply h-auto max-w-full mx-0;
+}
+
+.wp-block-group {
+	.wp-block-columns {
+		&.alignwide {
+			@apply mx-auto;
+		}
+	}
+}
+.wp-block-group.alignfull.has-background {
+	@apply px-0;
+}
+
+.alignfull{
+    .wp-block-column{
+        h1,h2,h3,h4,h5,p{
+            @apply px-3 md:px-0
+        }
+    }
+}

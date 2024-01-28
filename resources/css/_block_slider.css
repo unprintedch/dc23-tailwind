@@ -1,0 +1,57 @@
+.block-slider-wrapper{
+   @apply overflow-hidden relative;
+   max-height: 730px;
+
+   &::before{
+      @apply content-[''] absolute top-0 left-0 w-full h-full bg-white z-10 transition-all duration-1000;
+   }
+
+   &.slick-initialized{
+       @apply overflow-visible;
+       max-height: none;
+       &::before{
+         @apply opacity-0 pointer-events-none invisible;
+      }   
+   }
+}
+
+/* Arrows */
+.slick-arrow{
+   @apply absolute z-20 flex flex-col items-center justify-center w-16 h-16 cursor-pointer text-white text-2xl top-0 bottom-0 my-auto;
+   text-shadow: 1px 2px 6px rgba(0,0,0,0.5);
+
+   &.slick-arrow-left{ @apply left-0; }
+   &.slick-arrow-right{ @apply right-0; }
+
+   &.slick-disabled{
+      @apply cursor-default opacity-50;
+   }
+}
+
+
+/* Dots */
+ul.slick-dots{
+   @apply px-0 py-2 flex justify-center items-center;
+
+   li{
+      @apply list-none flex flex-col items-center justify-center;
+
+      button{
+         @apply w-6 h-6 flex justify-center items-center text-[0px];
+
+         &::before{
+            @apply content-[''] w-4 h-4 bg-primary rounded-full opacity-20 transition-all duration-300;
+         }
+         &:hover::before{
+            @apply opacity-100;
+         }
+      }
+
+      &.slick-active button{
+         
+         &::before{
+            @apply opacity-100;
+         }
+      }
+   }
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "settings": {
+    "layout": {
+      "contentSize": "1208px",
+      "wideSize": "1320px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#404bef"
+        },
+        {
+          "name": "Primary-hover",
+          "slug": "primary-hover",
+          "color": "#6c75f7"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#e21d7e"
+        },
+        {
+          "name": "Secondary-hover",
+          "slug": "secondary-hover",
+          "color": "#f44c9f"
+        },
+        {
+          "name": "Gray dark",
+          "slug": "gray-dark",
+          "color": "#1c1c1c"
+        },
+        {
+          "name": "Gray medium",
+          "slug": "gray-medium",
+          "color": "#7e7e7e"
+        },
+        {
+          "name": "Gray light",
+          "slug": "gray-light",
+          "color": "#f4f4f4"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "regular",
+          "name": "Regular",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "xl",
+          "name": "XL",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "xxl",
+          "name": "2XL",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "xxxl",
+          "name": "3XL",
+          "size": "1.875rem"
+        }
+      ]
+    }
+  }
+}

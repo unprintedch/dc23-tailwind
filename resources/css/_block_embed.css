@@ -1,0 +1,12 @@
+.wp-block-columns{
+    .wp-block-column{
+        .wp-block-embed.is-type-video{
+            .wp-block-embed__wrapper{
+                @apply relative pb-[56.25%] h-0 overflow-hidden max-w-full;
+                iframe{
+                    @apply absolute top-0 left-0 w-full h-full;
+                }
+            }
+        }
+    }
+}

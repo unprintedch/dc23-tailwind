@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#848484;}
+</style>
+<path class="st0" d="M224,0c13.3,0,24,10.7,24,24v40h112V24c0-13.3,10.7-24,24-24s24,10.7,24,24v40h40c35.3,0,64,28.7,64,64v48v16
+	v160c0,35.3-28.7,64-64,64H160c-35.3,0-64-28.7-64-64V192v-16v-48c0-35.3,28.7-64,64-64h40V24C200,10.7,210.7,0,224,0z M144,192v160
+	c0,8.8,7.2,16,16,16h288c8.8,0,16-7.2,16-16V192H144z M48,184v208c0,39.8,32.2,72,72,72h272c13.3,0,24,10.7,24,24s-10.7,24-24,24
+	H120C53.7,512,0,458.3,0,392V184c0-13.3,10.7-24,24-24S48,170.7,48,184z"/>
+</svg>

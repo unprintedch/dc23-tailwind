@@ -1,0 +1,11 @@
+.wp-block-columns {
+
+    /* Custom styles */
+    &.is-style-no-margin{
+        @apply mb-0;
+    }
+    &.is-style-gapless{
+        @apply gap-0;
+    }
+
+}

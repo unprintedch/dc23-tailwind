@@ -1,0 +1,81 @@
+body{
+
+    /* Container styles */
+    .wp-block-buttons.is-layout-flex{
+        @apply gap-4;
+    }
+
+    /* DEFAULT */
+    .gform_wrapper.gravity-theme .gform_footer button, 
+    .gform_wrapper.gravity-theme .gform_footer input, 
+    .gform_wrapper.gravity-theme .gform_page_footer button, 
+    .gform_wrapper.gravity-theme .gform_page_footer input,
+    .facetwp-facet.facetwp-type-reset button.facetwp-reset,
+    .wp-block-button__link{
+        @apply rounded-[3px] py-3 px-8 bg-primary text-white text-base font-medium tracking-wide transition-all duration-300 mb-4;
+
+        &:hover{
+            @apply bg-primary-hover text-white;
+        }
+    }
+
+    /* FILL */
+    .wp-block-button__link{
+
+        /* Primary */
+        &.has-primary-background-color{
+            
+            &:hover{
+                background-color: var(--wp--preset--color--primary-hover) !important;
+            }
+        }
+
+        /* Secondary */        
+        &.has-secondary-background-color{
+            &:hover{
+                background-color: var(--wp--preset--color--secondary-hover) !important;
+            }
+        }
+    }
+
+    /* OUTLINE */
+    .wp-block-button.is-style-outline>.wp-block-button__link,
+    .is-style-outline>.wp-block-button__link, 
+    .wp-block-button__link.is-style-outline{
+        @apply text-primary border-primary;
+
+        &:hover{
+            @apply bg-primary border-primary;
+            color: white !important;
+        }
+        
+        &:not(.has-text-color){
+            @apply text-primary;
+        }
+
+        &.has-primary-color{
+            @apply border-primary;
+            &:hover{
+                @apply bg-primary;
+            }
+        }
+        &.has-secondary-color{
+            @apply border-secondary;
+            &:hover{
+                @apply bg-secondary;
+            }
+        }
+    }
+
+    /* CUSTOM STYLES */
+        /* Medium */
+        .facetwp-facet.facetwp-type-reset button.facetwp-reset,
+        .wp-block-button.is-style-medium>.wp-block-button__link{
+            @apply py-2 px-6 text-sm;
+        }
+
+        /* Small */
+        .wp-block-button.is-style-small>.wp-block-button__link{
+            @apply py-[6px] px-4 text-xs uppercase tracking-wider font-bold;
+        }
+}

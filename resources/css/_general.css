@@ -1,0 +1,56 @@
+html{ scroll-behavior: smooth; }
+
+#content{
+    padding-top: 74.39px
+}
+hr{
+    @apply my-6;
+}
+
+/* BREADCRUMB */
+.breadcrumbs{
+    a{
+        @apply transition-all hover:text-primary;
+    }
+    span.current-item{
+        @apply font-semibold;
+    }
+}
+
+/* MAP */
+.acf-map {
+    @apply w-full;
+    /* Fixes potential theme css conflict. */
+    img {
+        max-width: inherit !important;
+    }
+}
+
+.tw-hidden{
+    @apply hidden;
+}
+
+/* Tabs / togglers */
+.tab {
+
+    input {
+        @apply absolute opacity-0;
+
+        &:checked {
+            + .tab-label {
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+            ~ .tab-content {
+                @apply py-4 overflow-visible;
+                max-height: 1024px;
+            }
+        }            
+    }
+
+    &-content {
+        @apply px-4 max-h-0 transition-all duration-300 overflow-hidden;
+    }
+
+}

@@ -1,0 +1,40 @@
+body,
+body .gform_wrapper.gravity-theme{
+
+    /* Inputs */
+    select,
+    textarea,
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="email"] {
+        @apply border border-gray-100 bg-gray-100 text-black outline-none p-4 leading-normal;
+        &:focus{
+            @apply outline-none border-primary;
+        }
+    }
+
+    /* Labels */
+    .gfield_label{
+        @apply text-base font-bold;
+    }
+
+    /* Sublabel */
+    .ginput_complex label{
+        @apply text-sm;
+    }
+
+    /* Footer */
+    .gform_footer, 
+    .gform_page_footer{
+        button, 
+        input{
+            @apply w-full sm:w-auto cursor-pointer border-2 border-primary;
+        }
+    }
+
+
+}

@@ -1,0 +1,20 @@
+body,
+body .gform_wrapper.gravity-theme{
+
+
+   .gfield.gfield--type-date {
+      &.gfield--input-type-datepicker {}
+
+      input{
+         @apply w-full;
+      }
+   }
+
+
+   .facetwp-facet.facetwp-type-date_range input,
+   input[type="date"]{
+      background-image: url('../assets/images/calendars-regular-gray.svg');
+      @apply bg-no-repeat bg-[center_right_1rem] bg-[length:18px_auto] ;
+
+   }
+}

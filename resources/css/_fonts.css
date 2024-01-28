@@ -1,0 +1,78 @@
+.container,
+.entry-content,
+.block-editor-block-list__layout {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply mb-[1em] font-display;
+
+	&.is-style-no-margin{
+		@apply mb-0;
+	}
+
+}
+
+h1 {
+	@apply md:text-6xl;
+}
+h2 {
+	@apply md:text-4xl ;
+}
+h3 {
+	@apply md:text-2xl;
+}
+h4 {
+	@apply md:text-xl;
+}
+h5 {
+	@apply text-lg;
+}
+h6 {
+	@apply text-lg;
+}
+
+p {
+	@apply mb-4 leading-tight text-lg;
+	
+	/* Small font size */
+	&.has-small-font-size {
+		line-height: 1.4em;
+	}
+
+	/* No margin */
+	&.is-style-no-margin{
+		@apply mb-0;
+	}
+
+	a{
+		@apply text-primary;
+	}
+}
+
+b,
+strong {
+
+}
+
+a {
+	&:hover {
+		@apply text-primary;
+	}
+}
+
+.entry-content {
+	ul {
+        @apply list-disc pl-4;
+        
+	}
+
+	ol {
+        @apply list-decimal pl-4;
+	}
+}
+

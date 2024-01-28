@@ -1,0 +1,8 @@
+body,
+body .gform_wrapper.gravity-theme{
+
+    select{
+      @apply pr-8;
+    }
+
+}

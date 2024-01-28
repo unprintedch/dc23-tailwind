@@ -1,0 +1,16 @@
+.wp-block-group{
+
+    /* Style full-height */
+    &.is-style-full-height{
+        @apply h-full;
+    }
+
+    &.has-background{
+        &.is-style-no-padding{
+            @apply p-0;
+        }
+        &.is-style-mini-padding{
+            @apply p-4;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.wp-block-navigation, 
+.wp-block-navigation .wp-block-page-list, 
+.wp-block-navigation__container, 
+.wp-block-navigation__responsive-container-content{
+    @apply gap-3;
+
+}

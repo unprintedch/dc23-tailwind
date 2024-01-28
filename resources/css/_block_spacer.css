@@ -1,0 +1,11 @@
+.wp-block-spacer{
+
+    &[style="height:332px"]{
+        @apply md:max-h-screen max-h-[160px;]
+    }
+
+    &[style="height:100px"]{
+        @apply md:max-h-screen max-h-[50px;]
+    }
+    
+}
