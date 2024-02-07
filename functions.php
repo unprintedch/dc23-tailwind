@@ -4,8 +4,8 @@ require_once(get_template_directory().'/blocks/init-blocks.php');
 require_once(get_template_directory().'/blocks/block-variation.php');
 //require_once(get_template_directory().'/parts/blocks/block-pattern.php');
 require_once(get_template_directory().'/functions/reusable_blocks-menu.php');
-require_once(get_template_directory().'/functions/tm21-functions.php');
-// require_once(get_template_directory().'/functions/tm21-customizer.php');
+require_once(get_template_directory().'/functions/dc23-functions.php');
+// require_once(get_template_directory().'/functions/dc23-customizer.php');
 require_once(get_template_directory().'/functions/editor-styles.php'); 
 
 
@@ -15,14 +15,14 @@ remove_theme_support( 'core-block-patterns' );
 /**
  * Theme setup.
  */
-function tm21_setup() {
+function dc23_setup() {
 	
 
 	add_theme_support( 'title-tag' );
 
 	register_nav_menus(
 		array(
-			'primary' => __( 'Primary Menu', 'tm21' )
+			'primary' => __( 'Primary Menu', 'dc23' )
 		)
 	);
 
@@ -51,19 +51,19 @@ function tm21_setup() {
 	add_editor_style();
 }
 
-add_action( 'after_setup_theme', 'tm21_setup' );
+add_action( 'after_setup_theme', 'dc23_setup' );
 
 /**
  * Enqueue theme assets.
  */
-function tm21_enqueue_scripts() {
+function dc23_enqueue_scripts() {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'tm21', get_stylesheet_directory_uri().'/css/app.css', array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'tm21', get_stylesheet_directory_uri().'/js/app.js' , array('jquery'), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'dc23', get_stylesheet_directory_uri().'/css/app.css', array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'dc23', get_stylesheet_directory_uri().'/js/app.js' , array('jquery'), $theme->get( 'Version' ) );
 }
 
-add_action( 'wp_enqueue_scripts', 'tm21_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'dc23_enqueue_scripts' );
 
 
 
@@ -76,7 +76,7 @@ add_action( 'wp_enqueue_scripts', 'tm21_enqueue_scripts' );
  *
  * @return array
  */
-function tm21_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
+function dc23_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
 	if ( isset( $args->li_class ) ) {
 		$classes[] = $args->li_class;
 	}
@@ -88,7 +88,7 @@ function tm21_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
 	return $classes;
 }
 
-add_filter( 'nav_menu_css_class', 'tm21_nav_menu_add_li_class', 10, 4 );
+add_filter( 'nav_menu_css_class', 'dc23_nav_menu_add_li_class', 10, 4 );
 
 /**
  * Adds option 'submenu_class' to 'wp_nav_menu'.
@@ -99,7 +99,7 @@ add_filter( 'nav_menu_css_class', 'tm21_nav_menu_add_li_class', 10, 4 );
  *
  * @return array
  */
-function tm21_nav_menu_add_submenu_class( $classes, $args, $depth ) {
+function dc23_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 	if ( isset( $args->submenu_class ) ) {
 		$classes[] = $args->submenu_class;
 	}
@@ -111,6 +111,6 @@ function tm21_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 	return $classes;
 }
 
-add_filter( 'nav_menu_submenu_css_class', 'tm21_nav_menu_add_submenu_class', 10, 3 );
+add_filter( 'nav_menu_submenu_css_class', 'dc23_nav_menu_add_submenu_class', 10, 3 );
 
 

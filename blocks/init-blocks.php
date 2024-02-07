@@ -1,7 +1,7 @@
 <?php
 // Register a slider block.
-add_action('acf/init', 'tm21_register_blocks');
-function tm21_register_blocks(){
+add_action('acf/init', 'dc23_register_blocks');
+function dc23_register_blocks(){
 
     // check function exists.
     if (function_exists('acf_register_block_type')) {

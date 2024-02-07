@@ -11,7 +11,7 @@ body .gform_wrapper.gravity-theme{
     input[type="tel"],
     input[type="text"],
     input[type="email"] {
-        @apply border border-gray-100 bg-gray-100 text-black outline-none p-4 leading-normal;
+        @apply border border-gray-200 bg-white text-black outline-none p-4 leading-normal;
         &:focus{
             @apply outline-none border-primary;
         }

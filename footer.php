@@ -20,9 +20,9 @@
 </footer>
 
 
-<footer class="copyright" role="contentinfo">
-	<div class="container text-xs">
-		&copy; Copyright <?php echo date_i18n('Y'); ?> - <?php echo get_bloginfo('name'); ?> – <?php _e('Réalisé par', 'tm21') ?> <a href="https://trivialmass.ch">trivialmass</a>
+<footer class="copyright bg-primary" role="contentinfo">
+	<div class="container text-xs text-white py-2">
+		&copy; Copyright <?php echo date_i18n('Y'); ?> - <?php echo get_bloginfo('name'); ?> – <?php _e('Réalisé par', 'dc23') ?> <a href="https://unprinted.ch">unprinted</a>
 	</div>
 </footer>
 

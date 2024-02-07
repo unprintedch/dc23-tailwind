@@ -1,6 +1,6 @@
 const _ = require("lodash");
 const theme = require('./theme.json');
-const tailpress = require("./tm21-theme.js");
+const tailpress = require("./dc23-theme.js");
 
 
 module.exports = {
@@ -39,7 +39,8 @@ module.exports = {
             '2xl': tailpress.theme('settings.layout.contentSize', theme)
         },
         fontFamily: {
-            'display': ['"SuisseIntl-Bold"', 'times', 'sans-serif'], 
+            'display': ['Montserrat', 'times', 'sans-serif'], 
+            'body': ['Montserrat', 'times', 'sans-serif'],
         }
     },
     plugins: [

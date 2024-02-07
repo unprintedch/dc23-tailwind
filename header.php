@@ -23,9 +23,9 @@
 					<?php
 					if (get_field('logo', 'option')) {
 						$attachment_id = get_field('logo', 'option');
-						echo wp_get_attachment_image($attachment_id, 'large', "", array("class" => "w-32"));
+						echo wp_get_attachment_image($attachment_id, 'large', "", array("class" => "w-46"));
 					} else {
-						get_template_part('template-parts/logo', null);
+						//get_template_part('template-parts/logo', null);
 					}
 					?>
 				</a>

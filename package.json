@@ -1,15 +1,15 @@
 {
-	"name": "tm21-tailwind",
+	"name": "dc23-tailwind",
 	"version": "0.0.1",
 	"description": "Boilerplate WordPress theme with TailwindCSS based on tailpress by Jeffrey van Rossum.",
 	"author": "dc",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/trivialmass/tm21-tailwind"
+		"url": "https://github.com/trivialmass/dc23-tailwind"
 	},
-	"theme_uri": "https://github.com/trivialmass/tm21-tailwind",
+	"theme_uri": "https://github.com/trivialmass/dc23-tailwind",
 	"author_uri": "https://trivialmass.com",
-	"text_domain": "tm21-tailwind",
+	"text_domain": "dc23-tailwind",
 	"license": "GPL-2.0",
 	"scripts": {
 		"production:css-app": "tailwindcss -i ./resources/css/app.css -o ./css/app.css --postcss --minify",

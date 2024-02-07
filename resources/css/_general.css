@@ -1,7 +1,7 @@
 html{ scroll-behavior: smooth; }
 
 #content{
-    padding-top: 74.39px
+    padding-top: 0px
 }
 hr{
     @apply my-6;

@@ -6,7 +6,7 @@ header{
             }
         }
         &.scrolled{
-            @apply bg-white shadow-lg;
+            @apply bg-transparent;
         }   
     }
 }

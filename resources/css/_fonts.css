@@ -37,7 +37,7 @@ h6 {
 }
 
 p {
-	@apply mb-4 leading-tight text-lg;
+	@apply mb-4 leading-tight text-lg font-body;
 	
 	/* Small font size */
 	&.has-small-font-size {
@@ -67,12 +67,12 @@ a {
 
 .entry-content {
 	ul {
-        @apply list-disc pl-4;
+        @apply list-disc pl-4 font-body;
         
 	}
 
 	ol {
-        @apply list-decimal pl-4;
+        @apply list-decimal pl-4 font-body;
 	}
 }
 

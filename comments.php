@@ -15,7 +15,7 @@ if ( post_password_required() ) {
 		<h2 class="comments-title">
 			<?php
 				printf(
-					_nx( 'One comment', '%1$s comments', get_comments_number(), 'comments title', 'tm21' ),
+					_nx( 'One comment', '%1$s comments', get_comments_number(), 'comments title', 'dc23' ),
 					number_format_i18n( get_comments_number() ),
 					get_the_title()
 				);
@@ -40,17 +40,17 @@ if ( post_password_required() ) {
 
 		<nav class="comment-navigation" id="comment-nav-above">
 
-			<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'tm21' ); ?></h1>
+			<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'dc23' ); ?></h1>
 
 			<?php if ( get_previous_comments_link() ) { ?>
 					<div class="nav-previous">
-						<?php previous_comments_link( __( '&larr; Older Comments', 'tm21' ) ); ?>
+						<?php previous_comments_link( __( '&larr; Older Comments', 'dc23' ) ); ?>
 					</div>
 			<?php } ?>
 
 			<?php if ( get_next_comments_link() ) { ?>
 				<div class="nav-next">
-					<?php next_comments_link( __( 'Newer Comments &rarr;', 'tm21' ) ); ?>
+					<?php next_comments_link( __( 'Newer Comments &rarr;', 'dc23' ) ); ?>
 				</div>
 			<?php } ?>
 
@@ -59,7 +59,7 @@ if ( post_password_required() ) {
 	<?php endif; ?>
 
 	<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'tm21' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'dc23' ); ?></p>
 	<?php endif; ?>
 
 	<?php

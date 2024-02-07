@@ -2,7 +2,7 @@
 
 	<div class="container">
 
-		<h1 class="archive-title"><?php _e( 'Search Results for:', 'tm21' ); ?> <?php echo esc_attr(get_search_query()); ?></h1>
+		<h1 class="archive-title"><?php _e( 'Search Results for:', 'dc23' ); ?> <?php echo esc_attr(get_search_query()); ?></h1>
 
 		<?php if ( have_posts() ) : ?>
 
