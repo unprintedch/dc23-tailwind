@@ -1,5 +1,11 @@
 html{ scroll-behavior: smooth; }
 
+.container{
+    @apply px-6 lg:px-0;
+
+}
+
+
 #content{
     padding-top: 0px
 }

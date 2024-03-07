@@ -17,13 +17,13 @@
 
 		<?php get_template_part('template-parts/offcanvas', 'menu') ?>
 
-		<header class="fixed z-30 w-full py-4 transition-all duration-300 header">
+		<header class="fixed z-30 w-full py-4 transition-all duration-300 header ">
 			<div class="container flex items-center justify-end m-auto">
 				<a href="<?php echo home_url(); ?>" class="mr-auto">
 					<?php
 					if (get_field('logo', 'option')) {
 						$attachment_id = get_field('logo', 'option');
-						echo wp_get_attachment_image($attachment_id, 'large', "", array("class" => "w-46"));
+						echo wp_get_attachment_image($attachment_id, 'large', "", array("class" => "w-28 lg:w-46 filter  transition-all "));
 					} else {
 						//get_template_part('template-parts/logo', null);
 					}
@@ -36,7 +36,7 @@
 						'container_class' => 'hidden lg:block',
 						'menu_class'      => 'menu dropdown',
 						'theme_location'  => 'primary',
-						'li_class'        => '',
+						'li_class'        => 'font-bold uppercase text-lg font-display text-white' ,
 						'fallback_cb'     => false,
 					)
 				); ?>

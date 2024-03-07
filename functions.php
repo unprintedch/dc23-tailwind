@@ -1,12 +1,11 @@
 <?php
 // Custom functions
-require_once(get_template_directory().'/blocks/init-blocks.php');
-require_once(get_template_directory().'/blocks/block-variation.php');
-//require_once(get_template_directory().'/parts/blocks/block-pattern.php');
-require_once(get_template_directory().'/functions/reusable_blocks-menu.php');
+require_once(get_template_directory().'/functions/dc23-blocks-variation.php');
+require_once(get_template_directory().'/functions/dc23-blocks-register.php');
+require_once(get_template_directory().'/functions/dc23-reusable-blocks-menu.php');
 require_once(get_template_directory().'/functions/dc23-functions.php');
 // require_once(get_template_directory().'/functions/dc23-customizer.php');
-require_once(get_template_directory().'/functions/editor-styles.php'); 
+require_once(get_template_directory().'/functions/dc23-editor-styles.php'); 
 
 
 
@@ -59,8 +58,8 @@ add_action( 'after_setup_theme', 'dc23_setup' );
 function dc23_enqueue_scripts() {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'dc23', get_stylesheet_directory_uri().'/css/app.css', array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'dc23', get_stylesheet_directory_uri().'/js/app.js' , array('jquery'), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'dc23-styles', get_stylesheet_directory_uri().'/css/app.css', array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'dc23-scripts', get_stylesheet_directory_uri().'/js/app.js' , array('jquery'), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'dc23_enqueue_scripts' );

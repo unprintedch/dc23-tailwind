@@ -10,6 +10,7 @@
 
 @import "_allblock.css";
     @import "_block_separator.css";
+    @import "_block_post-list.css";
     @import "_block_spacer.css";
     @import "_block_image.css";
     @import "_block_list.css";

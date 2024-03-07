@@ -1,0 +1,8 @@
+.wp-block-latest-posts {
+  li {
+    @apply rounded-md bg-gray-100 p-4 mb-6;
+  }
+  &__post-title {
+    @apply text-primary text-3xl font-bold no-underline;
+  }
+}

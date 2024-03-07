@@ -62,3 +62,17 @@ register_block_style(
         'label'     => __( 'Small' ),
     )
 );
+register_block_style(
+    'core/button',
+    array(
+        'name'      => 'no-margin',
+        'label'     => __( 'No margin' ),
+    )
+);
+register_block_style(
+    'core/separator',
+    array(
+        'name'      => 'thick-line',
+        'label'     => __( 'Thick line' ),
+    )
+);

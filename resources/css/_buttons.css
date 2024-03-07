@@ -4,6 +4,9 @@ body{
     .wp-block-buttons.is-layout-flex{
         @apply gap-4;
     }
+    .is-style-no-margin .wp-block-button__link{
+       @apply mb-0;
+    }
 
     /* DEFAULT */
     .gform_wrapper.gravity-theme .gform_footer button, 
@@ -12,7 +15,7 @@ body{
     .gform_wrapper.gravity-theme .gform_page_footer input,
     .facetwp-facet.facetwp-type-reset button.facetwp-reset,
     .wp-block-button__link{
-        @apply rounded-[3px] py-3 px-8 bg-primary text-white text-base font-medium tracking-wide transition-all duration-300 mb-4;
+        @apply rounded-[3px] py-3 px-8 bg-primary text-white  font-display font-bold uppercase tracking-wide transition-all duration-300 mb-4;
 
         &:hover{
             @apply bg-primary-hover text-white;

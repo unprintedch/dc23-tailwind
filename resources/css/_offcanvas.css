@@ -1,59 +1,63 @@
-.offcanvas{
-    &#offcanvas-menu{
-        &.open{
-            @apply pointer-events-auto opacity-100 translate-x-0;
-        }
+.offcanvas {
+  &#offcanvas-menu {
+    &.open {
+      @apply pointer-events-auto translate-x-0 opacity-100;
     }
+  }
 }
-.overlay{
-    &.open{
-        @apply opacity-90 pointer-events-auto;
-    }
+
+.admin-bar .burger-menu-close{
+    @apply relative top-4 z-50;
+}
+
+.overlay {
+  &.open {
+    @apply pointer-events-auto opacity-90;
+  }
 }
 /* ACCORDION MENU */
 ul.menu.accordion {
-    @apply flex flex-col items-start ml-8;
+  @apply ml-8 flex flex-col items-start;
 
-    li.menu-item{
-        @apply p-0;
-        a{
-            @apply block mr-3 p-3;
-        }
+  li.menu-item {
+    @apply p-0;
+    a {
+      @apply mr-3 block p-3;
+    }
+  }
+
+  li.menu-item.menu-item-has-children {
+    @apply relative inline-flex flex-col  border-b border-gray-200;
+    & > a {
+      @apply mr-12 border-r border-gray-200;
+    }
+    /* Dropdown arrow */
+    div.dropdown-arrow {
+      @apply absolute right-0 origin-center cursor-pointer transition-all duration-300;
+      &::after {
+        @apply inline-block p-3;
+        font: var(--fa-font-solid);
+        font-weight: 900;
+        content: "\f078";
+      }
     }
 
-    li.menu-item.menu-item-has-children{
-        @apply inline-flex flex-col relative  border-b border-gray-200 ;
-        & > a{
-            @apply border-r border-gray-200 mr-12;
-        }
-        /* Dropdown arrow */
-        div.dropdown-arrow{
-        
-            @apply absolute right-0 cursor-pointer origin-center transition-all duration-300;
-            &::after{
-                @apply p-3 inline-block;
-                font: var(--fa-font-solid); font-weight: 900; content: "\f078";
-            }
-        }
-
-        /* Is open */
-        &.open{
-            div.dropdown-arrow{
-                @apply rotate-180
-            }
-            ul.sub-menu{
-                @apply duration-700;
-                max-height: 600px;
-            }
-        }
-
+    /* Is open */
+    &.open {
+      div.dropdown-arrow {
+        @apply rotate-180;
+      }
+      ul.sub-menu {
+        @apply duration-700;
+        max-height: 600px;
+      }
     }
+  }
 
-    ul.sub-menu{
-
-        @apply max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-100;
-        li.menu-item{
-            @apply  py-3 px-0 mx-0 ;
-        }
+  ul.sub-menu {
+    @apply max-h-0 overflow-hidden bg-gray-100 transition-all duration-300 ease-in-out;
+    li.menu-item {
+      @apply mx-0 py-3 px-0;
     }
+  }
 }

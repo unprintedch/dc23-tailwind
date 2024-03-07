@@ -2,7 +2,7 @@
   "version": 1,
   "settings": {
     "layout": {
-      "contentSize": "1208px",
+      "contentSize": "1024px",
       "wideSize": "1320px"
     },
     "color": {
@@ -20,7 +20,7 @@
         {
           "name": "Secondary",
           "slug": "secondary",
-          "color": "#008D36"
+          "color": "#017e31"
         },
         {
           "name": "Secondary-hover",
@@ -31,6 +31,11 @@
           "name": "Gray dark",
           "slug": "gray-dark",
           "color": "#1c1c1c"
+        },
+        {
+          "name": "Gray warm",
+          "slug": "gray-warm",
+          "color": "#84380e"
         },
         {
           "name": "Gray medium",
