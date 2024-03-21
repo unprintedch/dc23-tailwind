@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-	@apply mb-[1em] font-display font-bold text-primary;
+	@apply mb-[1em] font-display  text-primary;
 
 	&.is-style-no-margin{
 		@apply mb-0;
@@ -18,7 +18,7 @@ h6 {
 }
 
 h1 {
-	@apply  text-3xl md:text-4xl;
+	@apply  text-3xl md:text-5xl;
 }
 h2 {
 	@apply  text-2xl md:text-3xl ;
@@ -37,7 +37,7 @@ h6 {
 }
 
 p {
-	@apply mb-4 leading-tight text-lg font-body text-gray-warm;
+	@apply mb-4 text-lg font-body;
 	
 	/* Small font size */
 	&.has-small-font-size {
@@ -64,12 +64,12 @@ a {
 
 .entry-content {
 	ul {
-        @apply list-disc pl-4 font-body text-gray-warm;
+        @apply list-disc pl-4 font-body text-lg;
         
 	}
 
 	ol {
-        @apply list-decimal pl-4 font-body;
+        @apply list-decimal pl-4 font-body text-lg;
 	}
 }
 

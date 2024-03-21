@@ -33,14 +33,14 @@ module.exports = {
         },   
         screens: {
             'sm': '640px',
-            'md': '768px',
-            'lg': '1024px',
+            'md': '640px',
+            'lg': '640px',
             'xl': tailpress.theme('settings.layout.contentSize', theme),
             '2xl': tailpress.theme('settings.layout.contentSize', theme)
         },
         fontFamily: {
-            'display': ['Montserrat', 'times', 'sans-serif'], 
-            'body': ['Montserrat', 'times', 'sans-serif'],
+            'display': ['tt-nooks', 'times', 'sans-serif'], 
+            'body': ['elza-text', 'times', 'sans-serif'],
         }
     },
     plugins: [

@@ -2,7 +2,6 @@ html{ scroll-behavior: smooth; }
 
 .container{
     @apply px-6 lg:px-0;
-
 }
 
 

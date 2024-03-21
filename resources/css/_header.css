@@ -1,6 +1,6 @@
 header {
   &.header {
-    @apply border-primary border-b bg-white;
+    @apply bg-white;
     img {
       @apply brightness-100 grayscale-0;
     }
@@ -19,15 +19,24 @@ header {
   }
 }
 
+.wpml-ls {
+  @apply ml-4 text-sm;
+  ul {
+    @apply lg:border-l border-gray-500 pl-4;
+    a {
+      @apply hover:text-primary-hover;
+    }
+  }
+}
+
 body.home {
   header {
     &.header {
-      @apply bg-transparent;
+      @apply bg-white;
       img {
         @apply brightness-200 grayscale;
       }
       li {
-        @apply text-white;
       }
       &.scrolled {
         @apply bg-white;
@@ -50,7 +59,7 @@ ul.menu,
 ul.sub-menu {
   li.menu-item {
     a {
-      @apply no-underline;
+      @apply hover:text-primary-hover no-underline;
     }
     @apply mr-4 py-2;
 

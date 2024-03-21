@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<link rel="stylesheet" href="https://use.typekit.net/kup1zgw.css">
+
+
 	<?php wp_head(); ?>
 </head>
 
@@ -17,8 +20,8 @@
 
 		<?php get_template_part('template-parts/offcanvas', 'menu') ?>
 
-		<header class="fixed z-30 w-full py-4 transition-all duration-300 header ">
-			<div class="container flex items-center justify-end m-auto">
+		<header class="fixed z-30 w-full py-4 pb-0 transition-all duration-300 header bg-white">
+			<div class="container flex items-center justify-end m-auto border-b">
 				<a href="<?php echo home_url(); ?>" class="mr-auto">
 					<?php
 					if (get_field('logo', 'option')) {
@@ -29,17 +32,19 @@
 					}
 					?>
 				</a>
-
 				<?php wp_nav_menu(
 					array(
 						'container_id'    => 'primary',
-						'container_class' => 'hidden lg:block',
+						'container_class' => 'hidden lg:block ',
 						'menu_class'      => 'menu dropdown',
 						'theme_location'  => 'primary',
-						'li_class'        => 'font-bold uppercase text-lg font-display text-white' ,
+						'li_class'        => 'font-body uppercase text-sm ' ,
 						'fallback_cb'     => false,
 					)
 				); ?>
+				<div>
+					<?php do_action('wpml_add_language_selector'); ?>
+				</div>
 
 				<div class="burger-menu lg:hidden">
 					<span class="bg-primary"></span>

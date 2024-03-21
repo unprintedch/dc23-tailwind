@@ -1,4 +1,44 @@
 .entry-content ul, ul{
-
-
+    @apply text-lg
+}
+.entry-content ul[class*="is-style-list-"] {
+    @apply list-none;
+    .editor-styles-wrapper &{
+        list-style: none ;
+        margin-left: 0 ;
+        li{
+          @apply flex items-center;
+        }
+    }
+    margin-left: 0;
+    li{
+        margin-left: 20px;
+        margin-bottom: 8px;
+        position: relative;
+        &:last-of-type{margin-bottom: 0;}
+        &:before {
+            margin-left: -25px;
+            margin-right: 10px;
+            color: var(--wp--preset--color--primary);
+           font: var(--fa-font-solid);
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-weight: 900;
+		}
+    }
+}
+ul.is-style-list-check {
+    li{
+        &:before {
+			content: "\f058";
+		}
+    }
+}
+ul.is-style-list-arrow {
+    li{
+        &:before {
+			content: "\f178";
+		}
+    }
 }

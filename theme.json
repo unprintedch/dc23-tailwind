@@ -2,30 +2,30 @@
   "version": 1,
   "settings": {
     "layout": {
-      "contentSize": "1024px",
-      "wideSize": "1320px"
+      "contentSize": "640px",
+      "wideSize": "1024px"
     },
     "color": {
       "palette": [
         {
           "name": "Primary",
           "slug": "primary",
-          "color": "#B85620"
+          "color": "#000000"
         },
         {
           "name": "Primary-hover",
           "slug": "primary-hover",
-          "color": "#C57720"
+          "color": "#FF0000"
         },
         {
           "name": "Secondary",
           "slug": "secondary",
-          "color": "#017e31"
+          "color": "#FF0000"
         },
         {
           "name": "Secondary-hover",
           "slug": "secondary-hover",
-          "color": "#44B85E"
+          "color": "#000000"
         },
         {
           "name": "Gray dark",
