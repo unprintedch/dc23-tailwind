@@ -22,7 +22,7 @@ header {
 .wpml-ls {
   @apply ml-4 text-sm;
   ul {
-    @apply lg:border-l border-gray-500 pl-4;
+    @apply lg:border-l border-gray-500 pl-4 text-base;
     a {
       @apply hover:text-primary-hover;
     }
