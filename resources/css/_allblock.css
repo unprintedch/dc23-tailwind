@@ -1,8 +1,6 @@
 .alignfull {
 	@apply mx-[calc(calc(50%_-_50vw))] w-screen;
 }
-
-
 .alignnone {
 	@apply h-auto max-w-full mx-0;
 }

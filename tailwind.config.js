@@ -1,10 +1,11 @@
 const _ = require("lodash");
 const theme = require('./theme.json');
 const tailpress = require("./dc23-theme.js");
+const includePreflight = 'editor' === process.env._TW_TARGET ? false : true;
+
 
 
 module.exports = {
-    tailpress,
     content: [
         './template-parts/*.php',
         '*.php',
@@ -43,8 +44,11 @@ module.exports = {
             'body': ['elza-text', 'times', 'sans-serif'],
         }
     },
+    corePlugins: {
+		// Disable Preflight base styles in builds targeting the editor.
+		preflight: includePreflight,
+	},
     plugins: [
         require('@tailwindcss/forms'),
-        tailpress.tailwind,
     ]
 };

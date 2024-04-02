@@ -2,12 +2,8 @@
 // Custom functions
 require_once(get_template_directory().'/functions/dc23-blocks-variation.php');
 require_once(get_template_directory().'/functions/dc23-blocks-register.php');
-require_once(get_template_directory().'/functions/dc23-reusable-blocks-menu.php');
 require_once(get_template_directory().'/functions/dc23-functions.php');
-// require_once(get_template_directory().'/functions/dc23-customizer.php');
 require_once(get_template_directory().'/functions/dc23-editor-styles.php'); 
-
-
 
 remove_theme_support( 'core-block-patterns' );
 

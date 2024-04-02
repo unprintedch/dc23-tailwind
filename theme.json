@@ -1,6 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
+
   "settings": {
+    "appearanceTools": false,
     "layout": {
       "contentSize": "640px",
       "wideSize": "1024px"

@@ -11,15 +11,9 @@
     @import "_block_separator.css";
     @import "_block_post-list.css";
     @import "_block_spacer.css";
-    @import "_block_image.css";
     @import "_block_list.css";
-    @import "_block_cover.css";
-    @import "_block_columns.css";
-    @import "_block_navigation.css";
-    @import "_block_group.css";
     @import "_block_embed.css";
-    @import "_block_gallery.css";
-        @import "_block_gallery_lightbox.css";
+    @import "_block_gallery_lightbox.css";
     @import "_block_slider.css";
 
 @import "_fonts.css";
@@ -34,13 +28,3 @@
     @import "_form_select.css";
     @import "_form_facet.css";
 
-/* @layer utilities {
-    @font-face {
-        font-family: 'SuisseIntl-Bold';
-        src: url('../assets/fonts/SuisseIntl-Bold-WebM.woff2') format('woff2'),
-            url('../assets/fonts/SuisseIntl-Bold-WebM.woff') format('woff');
-        font-weight: bold;
-        font-style: normal;
-        font-display: swap;
-    }    
-} */
