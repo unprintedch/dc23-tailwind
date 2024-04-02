@@ -20,11 +20,11 @@ header {
 }
 
 .wpml-ls {
-  @apply ml-4 text-sm;
+  @apply ml-4 ;
   ul {
-    @apply lg:border-l border-gray-500 pl-4 text-base;
+    @apply lg:border-l border-gray-500 pl-4 text-sm font-body;
     a {
-      @apply hover:text-primary-hover;
+      @apply hover:text-primary-hover text-sm;
     }
   }
 }
