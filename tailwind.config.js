@@ -1,8 +1,9 @@
 const _ = require("lodash");
 const theme = require('./theme.json');
-const tailpress = require("./dc23-theme.js");
-const includePreflight = 'editor' === process.env._TW_TARGET ? false : true;
+const dc23Process = require("./dc23-theme.js");
+const includePreflight = 'editor' === process.env._STYLE_TARGET ? false : true;
 
+console.log("here: "+includePreflight);
 
 
 module.exports = {
@@ -30,14 +31,14 @@ module.exports = {
             },
         },
         extend: {
-            colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme)),
+            colors: dc23Process.colorMapper(dc23Process.theme('settings.color.palette', theme)),
         },   
         screens: {
             'sm': '640px',
             'md': '640px',
             'lg': '640px',
-            'xl': tailpress.theme('settings.layout.contentSize', theme),
-            '2xl': tailpress.theme('settings.layout.contentSize', theme)
+            'xl': dc23Process.theme('settings.layout.contentSize', theme),
+            '2xl': dc23Process.theme('settings.layout.contentSize', theme)
         },
         fontFamily: {
             'display': ['tt-nooks', 'times', 'sans-serif'], 
