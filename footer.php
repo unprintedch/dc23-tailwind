@@ -20,8 +20,8 @@
 </footer>
 
 <div class="fixed bottom-6 right-6 z-50"> 
-	<a href="https://wa.me/+41763701299" class="p-6 rounded-full bg-primary drop-shadow-sm h-24 w-24 flex items-center justify-center gap-2 hover:bg-primary-hover -rotate-12 hover:rotate-0 transition-all no-underline font-bold text-white text-xl leading-[18px]">
-		COU <br> COU!
+	<a href="" class="p-6 no-underline font-bold text-white text-xl leading-[18px] w-[220px] h-[185px]	bg-[url('../assets/images/IMAGE_bulle.svg')] bg-no-repeat bg-cover flex justify-center items-center hover:text-white hover:-rotate-3 transition-all">
+	Brise le silence <br>on peut t’aider!
 	</a>
 </div>
 

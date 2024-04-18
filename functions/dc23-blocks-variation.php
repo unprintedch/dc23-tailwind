@@ -1,4 +1,27 @@
 <?php  
+
+add_filter( 'get_block_type_variations', 'dc23_block_type_variations', 10, 2 );
+
+function dc23_block_type_variations( $variations, $block_type ) {
+
+	if ( 'core/cover' === $block_type->name ) {
+		$variations[] = array(
+			'name'       => 'dc23-cover-hero',
+			'title'      => __( 'cover hero that moves', 'dc23' ),
+			'isActive'   => array(
+				'mediaPosition' 
+			),
+			'attributes' => array(
+				'mediaPosition' => 'right'
+			)
+		);
+	}
+
+	return $variations;
+}
+
+
+
 register_block_style(
     'core/heading',
     array(
@@ -67,6 +90,13 @@ register_block_style(
     array(
         'name'      => 'no-margin',
         'label'     => __( 'No margin' ),
+    )
+);
+register_block_style(
+    'core/button',
+    array(
+        'name'      => 'fat',
+        'label'     => __( 'CTA big' ),
     )
 );
 register_block_style(

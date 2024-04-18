@@ -39,8 +39,8 @@ module.exports = {
             '2xl': tailpress.theme('settings.layout.contentSize', theme)
         },
         fontFamily: {
-            'display': ['tt-nooks', 'times', 'sans-serif'], 
-            'body': ['elza-text', 'times', 'sans-serif'],
+            'display': ['"Krona One"', 'times', 'sans-serif'], 
+            'body': ['"Inter"', 'times', 'sans-serif'],
         }
     },
     plugins: [

@@ -81,4 +81,17 @@ body{
         .wp-block-button.is-style-small>.wp-block-button__link{
             @apply py-[6px] px-4 text-xs uppercase tracking-wider font-bold;
         }
+        .wp-block-buttons.dc23-fat-cta{
+            @apply gap-0;
+            .wp-block-button.is-style-fat{
+                @apply w-1/2 border-black;
+                .wp-block-button__link{
+                    @apply py-4 px-8 text-lg min-h-[130px] flex items-center border-black text-[30px];
+                    &::before{
+                        content: '>';
+                        @apply -mt-[25px] pr-4 text-xl;
+                    }
+                }
+            }
+        }
 }

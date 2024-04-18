@@ -34,14 +34,14 @@ body.home {
     &.header {
       @apply bg-white;
       img {
-        @apply brightness-200 grayscale;
+        @apply w-full
       }
       li {
       }
       &.scrolled {
         @apply bg-white;
         img {
-          @apply brightness-100 grayscale-0;
+          @apply w-24;
         }
         li {
           @apply text-primary;

@@ -1,1 +1,17 @@
-.wp-block-cover{}
+.wp-block-cover{
+    &.dc23-hero-home{
+        @apply relative;
+        figure.dc23-sun{
+            @apply absolute bottom-12 left-12 z-20 max-w-[560px];
+        }
+        figure.dc23-hand{
+            @apply absolute bottom-0 left-0 right-0 m-auto flex justify-center z-10 max-w-[222px];
+        }
+        figure.dc23-cloud{
+            @apply absolute -bottom-2 left-0 right-24 flex justify-end z-10 ml-[200px];
+        }
+        figure.dc23-balloon{
+            @apply absolute bottom-36  right-36;
+        }
+    }
+}
