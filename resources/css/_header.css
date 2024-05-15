@@ -1,19 +1,19 @@
 header {
   &.header {
     @apply bg-white;
-    img {
-      @apply brightness-100 grayscale-0;
-    }
+
+   
+
     li {
-      @apply text-primary;
+      @apply text-black;
     }
+
     &.scrolled {
       @apply bg-white;
-      img {
-        @apply brightness-100 grayscale-0;
-      }
+
+
       li {
-        @apply text-primary;
+        @apply text-black;
       }
     }
   }
@@ -21,8 +21,10 @@ header {
 
 .wpml-ls {
   @apply ml-4 text-sm;
+
   ul {
     @apply lg:border-l border-gray-500 pl-4 text-base;
+
     a {
       @apply hover:text-primary-hover;
     }
@@ -33,18 +35,15 @@ body.home {
   header {
     &.header {
       @apply bg-white;
-      img {
-        @apply w-full
-      }
-      li {
-      }
       &.scrolled {
         @apply bg-white;
+
         img {
-          @apply w-24;
+          @apply w-48;
         }
+
         li {
-          @apply text-primary;
+          @apply text-black;
         }
       }
     }
@@ -55,12 +54,14 @@ body.home {
 ul.menu {
   @apply flex gap-4;
 }
+
 ul.menu,
 ul.sub-menu {
   li.menu-item {
     a {
       @apply hover:text-primary-hover no-underline;
     }
+
     @apply mr-4 py-2;
 
     &:last-of-type {
@@ -71,11 +72,13 @@ ul.sub-menu {
 
 /* DROPDOWN MENU */
 ul.menu.dropdown {
+
   /* Has submenu */
   li.menu-item.menu-item-has-children {
     position: relative;
     display: inline-flex;
     padding-right: calc(25px + 0.5rem);
+
     &::after {
       display: inline-flex;
       justify-content: center;
@@ -92,6 +95,7 @@ ul.menu.dropdown {
       font-weight: 400;
       content: "\f078";
     }
+
     &:hover {
       ul.sub-menu {
         @apply max-h-96 shadow-xl;
@@ -101,26 +105,32 @@ ul.menu.dropdown {
 
   ul.sub-menu {
     @apply absolute top-full left-0 max-h-0 overflow-hidden border-t-0 border-transparent bg-white py-0 transition-all duration-300;
+
     li.menu-item {
-      @apply mr-0  py-0 text-black;
+      @apply mr-0 py-0 text-black;
+
       a {
         @apply hover:text-primary block whitespace-nowrap px-6 py-3 no-underline;
       }
     }
   }
 }
+
 .burger-menu,
 .burger-menu-close,
 .burger-menu-mobile {
-  @apply flex h-5  w-7 flex-col justify-between bg-transparent;
+  @apply flex h-5 w-7 flex-col justify-between bg-transparent;
   cursor: pointer;
+
   span {
     @apply block h-[2px] w-full;
     transition: all 0.2s ease-in-out;
+
     &:nth-child(2) {
       @apply mx-auto w-full;
     }
   }
+
   &:hover {
     span {
       &:last-of-type {
@@ -128,15 +138,19 @@ ul.menu.dropdown {
       }
     }
   }
+
   &.close-mode {
     span {
       @apply bg-primary;
+
       &:nth-of-type(1) {
         @apply translate-y-[9px] rotate-45;
       }
+
       &:nth-of-type(2) {
         width: 0;
       }
+
       &:last-of-type {
         @apply w-full -translate-y-[9px] -rotate-45;
       }

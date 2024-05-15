@@ -1,0 +1,16 @@
+{
+    "name": "dc23/slider-post",
+    "title": "Slider des posts",
+    "description": "Un carousel d'articles",
+    "category": "formatting",
+    "icon": "format-image",
+    "keywords": ["news", "article", "carousel", "slider", "post", "dc23"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-slider-post.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}

@@ -1,17 +1,59 @@
-.wp-block-cover{
-    &.dc23-hero-home{
+.wp-block-cover {
+    &.dc23-hero-home {
         @apply relative;
-        figure.dc23-sun{
-            @apply absolute bottom-12 left-12 z-20 max-w-[560px];
+
+        figure.dc23-sun {
+            @apply absolute bottom-12 left-4 xl:left-12 z-20 max-w-[200px] md:max-w-[280px] xl:max-w-[560px];
         }
-        figure.dc23-hand{
-            @apply absolute bottom-0 left-0 right-0 m-auto flex justify-center z-10 max-w-[222px];
+
+        figure.dc23-hand {
+            @apply absolute bottom-0 left-0 right-0 m-auto flex justify-center z-10 max-w-[100px] md:max-w-[180px] xl:max-w-[222px];
         }
-        figure.dc23-cloud{
-            @apply absolute -bottom-2 left-0 right-24 flex justify-end z-10 ml-[200px];
+
+        figure.dc23-cloud {
+            @apply absolute -bottom-2 left-0 flex justify-end z-10 ml-[200px] w-full ;
         }
-        figure.dc23-balloon{
-            @apply absolute bottom-36  right-36;
+
+        figure.dc23-balloon {
+            @apply absolute bottom-36 right-5 xl:right-36 max-w-[80px] xl:max-w-[140px];
         }
+    }
+}
+
+figure.dc23-sun {
+    display: inline-block;
+    animation: translate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
+figure.dc23-balloon {
+    display: inline-block;
+    animation: translate_up 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
+figure.dc23-cloud {
+    display: inline-block;
+    animation: translate_left 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes translate {
+    to {
+        transform: translate(200px, 0);
+    }
+}
+@keyframes translate_left {
+    to {
+        transform: translate(-200px, 0);
+    }
+}
+
+@keyframes translate_up {
+    to {
+        transform: translate(0, 150px);
     }
 }

@@ -1,5 +1,8 @@
 (() => {
   // resources/js/app.js
+  window.addEventListener("scroll", () => {
+    document.body.style.setProperty("--scroll", window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+  }, false);
   window.addEventListener("load", function() {
     const burgerIcon = document.querySelector(".burger-menu");
     const burgerIconClose = document.querySelector(".burger-menu-close");

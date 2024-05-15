@@ -20,37 +20,35 @@
 		<?php get_template_part('template-parts/offcanvas', 'menu') ?>
 
 		<header class="fixed z-30 w-full py-4 pb-0 transition-all duration-300 header bg-white">
-			<div class="flex items-end justify-end m-auto p-8 py-4 border-b-4 border-black">
+			<div class="flex items-end justify-end m-auto p-8 py-4 pb-8 border-b-4 border-black">
 				<a href="<?php echo home_url(); ?>" class="mr-auto">
 					<?php
 					if (get_field('logo', 'option')) {
 						$attachment_id = get_field('logo', 'option');
-						echo wp_get_attachment_image($attachment_id, 'large', "", array("class" => "w-28 lg:w-46 filter  transition-all "));
+						echo wp_get_attachment_image($attachment_id, 'large', "", array("class" => "w-36 md:w-64 filter  transition-all "));
 					} else {
 						//get_template_part('template-parts/logo', null);
 					}
 					?>
 				</a>
-				<?php wp_nav_menu(
-					array(
-						'container_id'    => 'primary',
-						'container_class' => 'hidden lg:block ',
-						'menu_class'      => 'menu dropdown align-self-bottom flex gap-4',
-						'theme_location'  => 'primary',
-						'li_class'        => 'font-display uppercase text-sm ' ,
-						'fallback_cb'     => false,
-					)
-				); ?>
-				<div>
-					<?php do_action('wpml_add_language_selector'); ?>
-				</div>
+				<div class="flex items-center gap-8">
+					<?php wp_nav_menu(
+						array(
+							'container_id'    => 'primary',
+							'container_class' => 'hidden lg:block ',
+							'menu_class'      => 'menu dropdown align-self-bottom flex gap-4',
+							'theme_location'  => 'primary',
+							'li_class'        => 'font-display uppercase text-sm ',
+							'fallback_cb'     => false,
+						)
+					); ?>
 
-				<div class="burger-menu lg:hidden">
-					<span class="bg-primary"></span>
-					<span class="bg-primary"></span>
-					<span class="bg-primary"></span>
+					<div class="burger-menu ">
+						<span class="bg-black"></span>
+						<span class="bg-black"></span>
+						<span class="bg-black"></span>
+					</div>
 				</div>
-
 			</div>
 		</header>
 

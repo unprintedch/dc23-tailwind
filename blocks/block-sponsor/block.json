@@ -1,0 +1,16 @@
+{
+    "name": "dc23/sponsors",
+    "title": "sponsors",
+    "description": "Une grille avec les institutions qui soutiennent le projet",
+    "category": "formatting",
+    "icon": "format-image",
+    "keywords": ["soutien", "grille", "dc23"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-sponsor.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}

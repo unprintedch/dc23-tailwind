@@ -28,7 +28,7 @@
 
 <footer class="copyright bg-primary" role="contentinfo">
 	<div class="container text-xs text-white py-2 text-center">
-		&copy; Copyright <?php echo date_i18n('Y'); ?> – <a href="https://unprinted.ch" class="hover:text-primary-hover">unprinted</a>
+		&copy; Copyright <?php echo date_i18n('Y'); ?> 
 	</div>
 </footer>
 

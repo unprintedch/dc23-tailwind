@@ -21,7 +21,8 @@ function dc23_setup() {
 
 	register_nav_menus(
 		array(
-			'primary' => __( 'Primary Menu', 'dc23' )
+			'primary' => __( 'Primary Menu', 'dc23' ),
+			'offcanvas' => __( 'Offcanvas Menu', 'dc23' )
 		)
 	);
 
@@ -63,6 +64,22 @@ function dc23_enqueue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'dc23_enqueue_scripts' );
+
+
+function enqueue_slick_slider() {
+    // Enqueue Slick CSS
+    wp_enqueue_style('slick-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+
+    // Enqueue Slick Theme CSS (optional, for default styling)
+	//wp_enqueue_style('slick-theme-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css');
+
+    // Enqueue Slick JavaScript
+    wp_enqueue_script('slick-js', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true);
+    
+    // Enqueue your custom script to initialize the slider
+   wp_enqueue_script('slick-init', get_stylesheet_directory_uri() . '/js/slick-init.js', array('slick-js'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_slick_slider');
 
 
 

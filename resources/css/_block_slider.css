@@ -17,8 +17,7 @@
 
 /* Arrows */
 .slick-arrow{
-   @apply absolute z-20 flex flex-col items-center justify-center w-16 h-16 cursor-pointer text-white text-2xl top-0 bottom-0 my-auto;
-   text-shadow: 1px 2px 6px rgba(0,0,0,0.5);
+   @apply cursor-pointer text-black text-2xl top-0 bottom-0 my-auto;
 
    &.slick-arrow-left{ @apply left-0; }
    &.slick-arrow-right{ @apply right-0; }
